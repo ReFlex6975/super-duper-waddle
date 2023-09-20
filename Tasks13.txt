@@ -1,0 +1,183 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Tasks13
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            bool repeat = true;
+
+            while (repeat)
+            {
+                Console.WriteLine("Введите номер задачи (от 1 до 13):");
+                int taskNumber = Convert.ToInt32(Console.ReadLine());
+
+                switch (taskNumber)
+                {
+                    case 1:
+                        Task1();
+                        break;
+
+                    case 2:
+                        Task2();
+                        break;
+
+                    case 3:
+                        Task3();
+                        break;
+
+                    case 4:
+                        Task4();
+                        break;
+
+                    case 5:
+                        Task5();
+                        break;
+
+                    case 6:
+                        Task6();
+                        break;
+
+                    case 7:
+                        Task7();
+                        break;
+
+                    case 8:
+                        Task8();
+                        break;
+
+                    case 9:
+                        Task9();
+                        break;
+
+                    case 10:
+                        Task10();
+                        break;
+
+                    case 11:
+                        Task11();
+                        break;
+
+                    case 12:
+                        Task12();
+                        break;
+
+                    case 13:
+                        Task13();
+                        break;
+
+                    default:
+                        Console.WriteLine("Неверный номер задачи.");
+                        break;
+                }
+
+                Console.WriteLine("Хотите выполнить другую задачу? (д/н)");
+                string answer = Console.ReadLine();
+
+                if (answer.ToLower() != "д")
+                    repeat = false;
+
+                Console.Clear();
+            }
+
+            Console.WriteLine("Все го хо ро ше го!");
+            Console.ReadKey();
+        }
+
+        static void Task1()
+        {
+            double n = 10.00;
+            Console.WriteLine(n.ToString("F2"));
+        }
+
+        static void Task2()
+        {
+            double e = Math.E;
+            Console.WriteLine(e.ToString("F1"));
+        }
+
+        static void Task3()
+        {
+            Console.WriteLine("Введите число:");
+            double n = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Вы ввели число " + n);
+        }
+        static void Task4()
+        {
+            Console.WriteLine("Введите число:");
+            double n1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(n1+ " вот какое число вы ввели");
+        }
+
+        static void Task5()
+        {
+            Console.WriteLine("1 13 49");
+        }
+
+        static void Task6()
+        {
+            Console.WriteLine("7  15  100");
+        }
+
+        static void Task7()
+        {
+            int n1 = 1;
+            int n2 = 3;
+            int n3 = 37;
+            Console.WriteLine(n1 + "  " + n2 + "  " + n3);
+        }
+
+        static void Task8()
+        {
+            int n1 = 1;
+            int n2 = 3;
+            int n3 = 3;
+            int n4 = 7;
+            Console.WriteLine(n1 + " " + n2 + " " + n3 + " " + n4);
+        }
+
+        static void Task9()
+        {
+            Console.WriteLine("50");
+            Console.WriteLine("10");
+        }
+
+        static void Task10()
+        {
+            Console.WriteLine("5");
+            Console.WriteLine("10");
+            Console.WriteLine("21");
+        }
+
+        static void Task11()
+        {
+            int n1 = 1;
+            int n2 = 3;
+            int n3 = 3;
+            int n4 = 7;
+            Console.WriteLine(n1);
+            Console.WriteLine(n2);
+            Console.WriteLine(n3);
+            Console.WriteLine(n4);
+        }
+
+        static void Task12()
+        {
+            Console.WriteLine("5 10");
+            Console.WriteLine("7 см");
+        }
+
+        static void Task13()
+        {
+            Console.WriteLine("2 кг");
+            Console.WriteLine("13 17");
+        }
+
+    } 
+}
+
